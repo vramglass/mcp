@@ -1,0 +1,46 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.vramglass/mcp",
+  "title": "VRAMGlass",
+  "description": "Live GPU prices, VRAM requirements and local LLM hardware planning from VRAMGlass.",
+  "version": "1.0.0",
+  "websiteUrl": "https://vramglass.com/mcp",
+  "repository": {
+    "url": "https://github.com/vramglass/mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://vramglass.com/brand/favicon-vg.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    },
+    {
+      "src": "https://vramglass.com/brand/icon-192.png",
+      "mimeType": "image/png",
+      "sizes": ["192x192"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.vramglass.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "API key from vramglass.com/account/mcp. Leave empty if your client signs in with OAuth.",
+          "isRequired": false,
+          "isSecret": true,
+          "value": "Bearer {api_key}",
+          "variables": {
+            "api_key": {
+              "description": "VRAMGlass API key (starts with vgk_)",
+              "isRequired": true,
+              "isSecret": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
