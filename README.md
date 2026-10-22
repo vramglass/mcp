@@ -109,6 +109,8 @@ All tools are read-only. Results include a `page_url` and a `cite` line for attr
 
 This repository holds the documentation and the [MCP Registry](https://registry.modelcontextprotocol.io) metadata ([`server.json`](server.json)) for the hosted VRAMGlass MCP server. The server runs on VRAMGlass infrastructure; its source code is not published here, and there is nothing to install.
 
+The server is listed in the official MCP Registry as [`com.vramglass/mcp`](https://registry.modelcontextprotocol.io/v0.1/servers?search=com.vramglass%2Fmcp), verified through the vramglass.com domain.
+
 - Questions and data corrections: [hello@vramglass.com](mailto:hello@vramglass.com)
 - Documentation issues: [open an issue](https://github.com/vramglass/mcp/issues)
 - Security reports: see [SECURITY.md](SECURITY.md)
