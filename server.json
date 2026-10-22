@@ -7,18 +7,23 @@
   "websiteUrl": "https://vramglass.com/mcp",
   "repository": {
     "url": "https://github.com/vramglass/mcp",
-    "source": "github"
+    "source": "github",
+    "id": "1429273405"
   },
   "icons": [
     {
       "src": "https://vramglass.com/brand/favicon-vg.svg",
       "mimeType": "image/svg+xml",
-      "sizes": ["any"]
+      "sizes": [
+        "any"
+      ]
     },
     {
       "src": "https://vramglass.com/brand/icon-192.png",
       "mimeType": "image/png",
-      "sizes": ["192x192"]
+      "sizes": [
+        "192x192"
+      ]
     }
   ],
   "remotes": [
