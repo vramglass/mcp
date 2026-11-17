@@ -86,6 +86,7 @@ The assistant picks the right tool by itself; you don't need to remember these n
 | `gpus_for_model` | How much VRAM a model needs, which cards can run it and roughly how fast |
 | `recommend_build` | PC builds for a model (GPU, CPU, motherboard, RAM, PSU) with an optional budget, prices and buy links; GPU options instead when the model fits entirely in VRAM |
 | `get_ebay_deals` | The eBay deals shown on GPU and memory pages: the same rule-filtered listings, up to six |
+| `get_listings` | **Pro.** Every listing behind the latest median price of a GPU or memory kit on one marketplace: title, price, condition, seller and link. Each listing returned counts as one call |
 | `get_rent_prices` | Hourly rental prices on RunPod, Vast.ai and Compshare |
 
 All tools are read-only. Results include a `page_url` and a `cite` line for attribution.
