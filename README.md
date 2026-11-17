@@ -88,15 +88,17 @@ The assistant picks the right tool by itself; you don't need to remember these n
 | `get_ebay_deals` | The eBay deals shown on GPU and memory pages: the same rule-filtered listings, up to six |
 | `get_listings` | **Pro.** Every listing behind the latest median price of a GPU or memory kit on one marketplace: title, price, condition, seller and link. Each listing returned counts as one call |
 | `get_rent_prices` | Hourly rental prices on RunPod, Vast.ai and Compshare |
+| `get_strata_results` | Measured Strata engine speeds for Qwen3.8 Flash Next and DeepSeek V4.1 Flash on different GPUs and machines, with the setup and source report |
+| `get_maya_results` | Measured Project Maya engine speeds for GLM 5.3 Flash on different GPUs and machines, with the setup and source report |
 
 All tools are read-only. Results include a `page_url` and a `cite` line for attribution.
 
 ## Keys, access and usage
 
 - A key or an authorized app can only read public price and spec data. It can't see your email, price alerts or watchlist, and it can't change anything in your account.
-- Use one key per tool so you can turn each one off separately. Each account can have up to 5 keys, each valid for up to one year.
+- Use one key per tool so you can turn each one off separately. Free accounts can have up to 2 keys and Pro up to 5, each valid for up to one year.
 - Revoke a key or disconnect an app under [MCP connections](https://vramglass.com/account/mcp); it stops working within 30 seconds.
-- It's free. If you call it too often you'll be rate-limited briefly, then it recovers on its own. For heavy use, email [hello@vramglass.com](mailto:hello@vramglass.com).
+- Free accounts get 50 calls a day (20 a minute) and Pro 2,000 a day (120 a minute), MCP and the REST API combined, resetting at 00:00 UTC. Pro also unlocks `get_listings`. See [pricing](https://vramglass.com/pricing); for more than 2,000 calls a day, email [hello@vramglass.com](mailto:hello@vramglass.com).
 
 ## Data and citation
 
